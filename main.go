@@ -10,8 +10,8 @@ func main() {
 	http.HandleFunc("/hello", helloHandler)
 
 	// Menjalankan server HTTP di port 8080
-	fmt.Println("Server listening on :8080...")
-	err := http.ListenAndServe(":8080", nil)
+	fmt.Println("Server listening on :80...")
+	err := http.ListenAndServe(":80", nil)
 	if err != nil {
 		fmt.Println("Error:", err)
 	}
